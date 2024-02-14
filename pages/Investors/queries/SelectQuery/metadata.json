@@ -169,7 +169,8 @@
     "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
-    "userPermissions": []
+    "userPermissions": [],
+    "createdAt": "2023-11-09T13:11:25Z"
   },
   "id": "Investors_SelectQuery",
   "deleted": false,
