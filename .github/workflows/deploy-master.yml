@@ -1,0 +1,14 @@
+name: Deploy Master
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  curl-call:
+    runs-on: ubuntu-latest
+    steps:
+      - name: cURL request
+        run: |
+          curl --location --request POST https://release-ee.appsmith.com/api/v1/git/deploy/app/65cd09a62c72d808c2a5814c?branchName=master --header 'Authorization: Bearer <RELEASE_EE_CD>'
